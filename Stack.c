@@ -108,6 +108,10 @@ int main()
 	// Because in Stack deleting process, the value that will be deleted should be on the top of every values
 	int value = 0;
 	
+	// The history of delete process
+	int deleteHistory[15] = {0,};
+	int deleteCnt = 0;
+	
 	// The part to put title to center
 	int i;
 	char * Title = "STACK";
@@ -141,7 +145,8 @@ int main()
 					break;
 				}
 				case 1 : {
-					Pop(&stack);
+					deleteHistory[deleteCnt] = Pop(&stack);
+					deleteCnt++;
 					break;
 				}	
 				case 2 : {
@@ -158,5 +163,10 @@ int main()
 		
 		system("cls");	// clear the terminal screen (Window version)
 	}
+	
+	printf("- Delete History -\n\n");
+	for (i = 0; i < deleteCnt; i++)
+		printf("%d : %d\n", i + 1, deleteHistory[i]);
+	printf("\n------------------\n");
 	return 0;
 }
