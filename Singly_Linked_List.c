@@ -209,32 +209,30 @@ int main() {
 			scanf("%d", &value);
 		}
 		
-		switch (input)
-		{
-			case -1 :
-				return 0;
-				break;
-			case 0 :	{
-				Node * newNode = (Node *)malloc(sizeof(Node));
-				newNode->data = value;
-				head = InsertNode(head, newNode);
-				break;
-			}
-			case 1 : {
-				head = DeleteNode(head, value);
-				break;
-			}	
-			case 2 : {
-				head = DisplayNode(head);
-				break;
-			}
-			// exception processing
-			default :
-				printf("\n\n! This is worng input !\n");
-				printf("! Try other input !\n");
-				getch();
-				break;	
-		} 
+		if (input != -1)
+			switch (input)
+			{
+				case 0 :	{
+					Node * newNode = (Node *)malloc(sizeof(Node));
+					newNode->data = value;
+					head = InsertNode(head, newNode);
+					break;
+				}
+				case 1 : {
+					head = DeleteNode(head, value);
+					break;
+				}	
+				case 2 : {
+					head = DisplayNode(head);
+					break;
+				}
+				// exception processing
+				default :
+					printf("\n\n! This is worng input !\n");
+					printf("! Try other input !\n");
+					getch();
+					break;	
+			} 
 		
 		system("cls");	// clear the terminal screen (Window version)
 	}
