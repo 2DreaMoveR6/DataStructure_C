@@ -10,4 +10,8 @@ Reference annotation in script for checking detail.
 It has implemented functions correspoinding to Push/Pop/Display.  
 Reference annotation in script for checking detail.  
 
+## 3. Queue (Queue.c and exe file)
+It has implemented functions corresponding to Enqueue/Dequeue/Display.  
+Reference annotation in script for checking detail.  
+
 *I'm trying to show the appearance of data structure.*
