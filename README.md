@@ -14,4 +14,14 @@ Reference annotation in script for checking detail.
 It has implemented functions corresponding to Enqueue/Dequeue/Display.  
 Reference annotation in script for checking detail.  
 
-*I'm trying to show the appearance of data structure.*
+## 4. Recursive Function (Recursive_Function.c and exe file)
+For description of recursive function, Use two examples  
+1. Factorial calculation
+2. Fibonacci numbers
+
+The most important knowledges are  
+* When recursive function is ended, it returns to point where it is recalled and keep to go down.
+* If there are two points that recall itself, Two points are operated independently like tree data structure.
+So, It can be used when you implement Tree data structure.  
+
+*I'm trying to show the appearance of data structure.*  
